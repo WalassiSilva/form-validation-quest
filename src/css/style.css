@@ -1,0 +1,125 @@
+body{
+    background-image: url(../imgs/bg-repeat.jpg);
+    background-size: contain;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+} 
+
+.container .suport{
+    color: #fff;
+    padding: 0 50px;
+    
+}
+
+.container .suport .title{
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.container .suport .text {
+    font-size: 15px;
+    font-weight: 400;
+    width: 300px;
+}
+
+/* LEFT SIDE */
+.container .infos {
+    background-color: #FFF;
+    height: 380px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 20px;
+}
+
+.infos form {
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.infos .input-check{
+    width: 100%;
+    height: 35px;
+
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;  
+    text-align: start;  
+    
+}
+.infos form .input-box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.infos .message{
+    height: 100px;
+}
+
+.infos .field-description{
+    font-size: 15px;
+    font-weight: 400;
+    color:  black;
+    display: block;
+    transform: translateX(-7px);
+}
+
+.infos button{
+    cursor: pointer;
+    color: #fff;
+    background-color: #3CCC87;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.infos button:hover{
+    font-size: 17px;
+}
+
+/* JAVA_SCRIPT VALIDATION */
+.infos .input-check.incomplete {
+    border: 1px solid #f52e2e;
+}
+
+.infos .complete{
+    border: 1px solid #00C22B;
+}
+
+.infos .input-check ~ .warning{
+    visibility:hidden;
+    font-size: 8px;
+    color: #f52e2e;
+    top: 0;
+}
+
+.infos .input-check.incomplete ~ .warning{
+    visibility: visible;       
+}
+
+
